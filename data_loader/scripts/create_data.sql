@@ -1,5 +1,10 @@
+CREATE DATABASE IF NOT EXISTS db_data;
+
+USE db_data;
+
 CREATE TABLE data (
-    ID INT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50)
+ID INT NOT NULL AUTO_INCREMENT,
+first_name VARCHAR(255),
+last_name VARCHAR(255) NOT NULL,
+ PRIMARY KEY (ID)
 );
